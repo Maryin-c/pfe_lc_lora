@@ -282,7 +282,7 @@ for epoch in range(epochs):
             res = accuracy_multiclass_gpu(model_for_checkpoint, test_loader)  # Ensure this function also handles data on GPU
 
             # print("ACCURACY: {}".format(res))
-            if res > 0.7:
+            if res > 0:
                 # Move model to CPU before saving
                 model_for_checkpoint.to('cpu')
                 torch.save(model_for_checkpoint.state_dict(), HDFP + "/branch_{}.pt".format(res))
