@@ -85,8 +85,8 @@ def main():
     optimized_elapsed_time = time.time() - start_time
 
     # Print results
-    print("Original function execution time:", original_elapsed_time)
-    print("Optimized function execution time:", optimized_elapsed_time)
+    # print("Original function execution time:", original_elapsed_time)
+    # print("Optimized function execution time:", optimized_elapsed_time)
 
 if __name__ == "__main__":
     main()

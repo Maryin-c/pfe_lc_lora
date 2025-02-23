@@ -58,7 +58,7 @@ def compress_set(filename : str, saveloc : str):
     base, bias = extract_weights(get_state_dict(filename + "/" + models[0]))
     compressed_deltas[models[0]] = (zlib.compress(base), bias)
     for m_ in models[1:]:
-        print("Delta Compression on: {}".format(m_))
+        # print("Delta Compression on: {}".format(m_))
         curr, bias = extract_weights(get_state_dict(filename + "/" + m_))
         δt = np.subtract(curr, base)
         compressed_δt, lossy_δt = compress.compress_data(δt)
@@ -67,7 +67,7 @@ def compress_set(filename : str, saveloc : str):
     if not os.path.exists(saveloc):
         os.makedirs(saveloc)
     for key, val in compressed_deltas.items(): # Save process
-        print("Saving Compressed Format: {}".format(key))
+        # print("Saving Compressed Format: {}".format(key))
         idiv_file_path = os.path.join(saveloc, 'compressed_{}.pt'.format(key[:-4]))
         with open(idiv_file_path, 'wb') as f:
             pickle.dump(val, f)
@@ -88,7 +88,7 @@ def compress_set_torch(filename : str, saveloc : str):
     base, bias = extract_weights(get_state_dict_torch(filename + "/" + models[0]))
     compressed_deltas[models[0]] = (zlib.compress(base), bias)
     for m_ in models[1:]:
-        print("Delta Compression on: {}".format(m_))
+        # print("Delta Compression on: {}".format(m_))
         curr, bias = extract_weights(get_state_dict_torch(filename + "/" + m_))
         δt = np.subtract(curr, base)
         compressed_δt, lossy_δt = compress.compress_data(δt)
@@ -97,7 +97,7 @@ def compress_set_torch(filename : str, saveloc : str):
     if not os.path.exists(saveloc):
         os.makedirs(saveloc)
     for key, val in compressed_deltas.items(): # Save process
-        print("Saving Compressed Format: {}".format(key))
+        # print("Saving Compressed Format: {}".format(key))
         idiv_file_path = os.path.join(saveloc, 'compressed_{}.pt'.format(key.split(".")[0]))
         with open(idiv_file_path, 'wb') as f:
             pickle.dump(val, f)
@@ -122,7 +122,7 @@ def extract_weights(sd, saveloc, decomposed_layers):
     if not os.path.exists(saveloc):
         os.makedirs(saveloc)
     # fp = os.path.join(saveloc, "/initial_model.pt")
-    print("old_lc | saving full base model @ {}".format(saveloc + "/initial_model.pt"))
+    # print("old_lc | saving full base model @ {}".format(saveloc + "/initial_model.pt"))
     torch.save(sd, saveloc + "/initial_model.pt")
 
     weights = []
@@ -149,7 +149,7 @@ def get_state_dict(filename : str) -> dict:
 
     @return State dictionary of original model.
     """
-    print("Loading: {}".format(filename))
+    # print("Loading: {}".format(filename))
     return torch.load(filename, map_location = torch.device('cpu'))["network_fn_state_dict"]
 
 def get_state_dict_torch(filename : str) -> dict:
@@ -158,7 +158,7 @@ def get_state_dict_torch(filename : str) -> dict:
 
     @return State dictionary of original model.
     """
-    print("Loading: {}".format(filename))
+    # print("Loading: {}".format(filename))
     return torch.load(filename)
 
 
@@ -179,7 +179,7 @@ def load_compressed_set(filepath : str, saveloc : str, original_weight_dict : di
     base = None
     start = False
     for name, encoded_checkpoint in compressed_models.items():
-        print("Decompressing for: {}".format(name))
+        # print("Decompressing for: {}".format(name))
         decoded_checkpoint = decompress.decode_data(encoded_checkpoint[0])
         bias = encoded_checkpoint[1]
         if not start: 
@@ -193,7 +193,7 @@ def load_compressed_set(filepath : str, saveloc : str, original_weight_dict : di
         os.makedirs(saveloc)
     for name, full_state_dict in compressed_models.items():
         new_name = "decompressed_" + name.split("compressed_")[-1]
-        print("Saving Decompressed Model at: {}".format(new_name))
+        # print("Saving Decompressed Model at: {}".format(new_name))
         idiv_file_path = os.path.join(saveloc, new_name)
         with open(idiv_file_path, 'wb') as f:
             pickle.dump(full_state_dict, f)
@@ -381,7 +381,7 @@ def save_checkpoint(saveloc, checkpoint_weights, checkpoint_bias, checkpoint_id)
         os.makedirs(saveloc)
 
     checkpoint_name = "old_lc_checkpoint_{}.pt".format(checkpoint_id)
-    print("Saving Checkpoint: {} @ {}".format(checkpoint_name, saveloc))
+    # print("Saving Checkpoint: {} @ {}".format(checkpoint_name, saveloc))
     fp = os.path.join(saveloc, checkpoint_name)
 
     # Calculate sizes before serialization

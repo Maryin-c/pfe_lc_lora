@@ -18,7 +18,7 @@ def evaluate_accuracy(model, test_ds):
             t_dp += label.size(0)
             t_correct += (opt == label).sum().item()
     acc = t_correct / t_dp
-    print("model accuracy: {}".format(acc))
+    # print("model accuracy: {}".format(acc))
     model.train() # Revert to training state.
     return acc
 

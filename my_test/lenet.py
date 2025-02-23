@@ -64,9 +64,9 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # In[24]:
 
 
-PRE_TRAINED = "./" + TASK_NAME + "/pretrained_model.pth"
-if not os.path.exists("./" + TASK_NAME):
-    os.makedirs("./" + TASK_NAME)
+PRE_TRAINED = "./my_test/" + TASK_NAME + "/pretrained_model.pth"
+if not os.path.exists("./my_test/" + TASK_NAME):
+    os.makedirs("./my_test/" + TASK_NAME)
 
 
 # ## 创建第一个检查点
@@ -152,11 +152,11 @@ DECOMPOSED_LAYERS = ['classifier.1.weight', 'classifier.3.weight']
 RANK = -1
 SCALING = -1
 
-DLORA_LC_LOC = "./" + TASK_NAME + "/dlora-lc"
+DLORA_LC_LOC = "./my_test/" + TASK_NAME + "/dlora-lc"
 if not os.path.exists(DLORA_LC_LOC):
     os.makedirs(DLORA_LC_LOC)
 
-LC_LOC = "./" + TASK_NAME + "./lc"
+LC_LOC = "./my_test/" + TASK_NAME + "/lc"
 if not os.path.exists(LC_LOC):
     os.makedirs(LC_LOC)
 
@@ -390,7 +390,7 @@ plt.xlabel("Epoch")
 plt.legend()
 # plt.show()
 
-plt.savefig("./" + TASK_NAME + "/lenet_accuracy.png", dpi=300, bbox_inches='tight')
+plt.savefig("./my_test/" + TASK_NAME + "/lenet_accuracy.png", dpi=300, bbox_inches='tight')
 plt.close()  # 关闭图像，释放资源
 
 
@@ -426,7 +426,7 @@ plt.ylabel("Absolute Accuracy Loss")
 plt.xlabel("Epoch")
 # plt.show()
 
-plt.savefig("./" + TASK_NAME + "/lenet_loss.png", dpi=300, bbox_inches='tight')
+plt.savefig("./my_test/" + TASK_NAME + "/lenet_loss.png", dpi=300, bbox_inches='tight')
 plt.close()  # 关闭图像，释放资源
 
 
@@ -469,6 +469,6 @@ data = {
     "decomposed_full_accuracy" : decomposed_full_accuracy,
     "lc_restored_accuracy" : lc_accuracy
 }
-with open("./" + TASK_NAME + "/data.json", 'w') as f:
+with open("./my_test/" + TASK_NAME + "/data.json", 'w') as f:
     json.dump(data, f)
 

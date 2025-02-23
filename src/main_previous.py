@@ -47,7 +47,7 @@ def extract_weights(initmodel, saveloc, decomposed_layers, restoring = False):
 
         # Creation of the full path
         fp = os.path.join(saveloc, "base_model.pt")
-        print("saving full base model @ {}".format(fp))
+        # print("saving full base model @ {}".format(fp))
 
         # Save the model.
         torch.save(wd, fp)
@@ -193,7 +193,7 @@ def save_checkpoint(checkpoint_weights, decomposed_weights, checkpoint_bias, che
     if not os.path.exists(saveloc):
         os.makedirs(saveloc)
     checkpoint_name = "lc_checkpoint_{}.pt".format(checkpoint_id)
-    print("Saving Checkpoint: {} @ {}".format(checkpoint_name, saveloc))
+    # print("Saving Checkpoint: {} @ {}".format(checkpoint_name, saveloc))
     fp = os.path.join(saveloc, checkpoint_name)
     with open(fp, "wb") as f:
         # print("from src")
