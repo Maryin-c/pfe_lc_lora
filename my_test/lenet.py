@@ -36,6 +36,15 @@ import torchvision.transforms as transforms
 from src.models.LeNet import LeNet
 import numpy as np
 
+from src.models.LeNet_LowRank import getBase, LeNet_LowRank, load_sd_decomp
+import src.main as lc
+from src.utils.utils import evaluate_accuracy, lazy_restore, evaluate_compression
+import old_lc.main as olc
+
+import matplotlib.pyplot as plt
+
+import math
+import json
 
 # In[23]:
 
@@ -154,11 +163,6 @@ if not os.path.exists(LC_LOC):
 
 # In[29]:
 
-
-from src.models.LeNet_LowRank import getBase, LeNet_LowRank, load_sd_decomp
-import src.main as lc
-from src.utils.utils import evaluate_accuracy, lazy_restore, evaluate_compression
-import old_lc.main as olc
 
 # 训练模型
 num_epochs = 1
@@ -373,7 +377,7 @@ for epoch in range(num_epochs):
 # In[36]:
 
 
-import matplotlib.pyplot as plt
+
 plt.figure(figsize = (30, 5))
 plt.title("LeNet, Accuracy")
 plt.plot(full_accuracy, label = "Default LeNet")
@@ -429,7 +433,7 @@ plt.close()  # 关闭图像，释放资源
 # In[32]:
 
 
-import math
+
 def getsize(sl):
     dir = [x for x in os.listdir(sl)]
     csize, usize = 0, 0
@@ -458,7 +462,7 @@ print("Compression Ratio: {}%, Space Savings: {}%".format(a, b))
 # In[34]:
 
 
-import json
+
 data = {
     "full_acc" : full_accuracy,
     "decomposed_restored_accuracy" : restored_accuracy,

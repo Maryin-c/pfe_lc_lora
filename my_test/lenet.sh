@@ -12,4 +12,6 @@
 source ../miniconda3/etc/profile.d/conda.sh
 conda activate py310
 
+export PYTHONPATH=$(pwd)
+
 python ./my_test/lenet.py
