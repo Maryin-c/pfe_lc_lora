@@ -17,8 +17,11 @@ import os
 notebook_path = os.getcwd()
 parent_path = os.path.dirname(notebook_path)  # 获取上一级目录路径
 
+print(notebook_path)
+print(parent_path)
+
 # 添加到 sys.path
-sys.path.append(parent_path)
+#sys.path.append(parent_path)
 
 
 # In[22]:
