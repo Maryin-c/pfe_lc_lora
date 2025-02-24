@@ -80,10 +80,10 @@ for epoch in range(num_epochs):
         if iter % 100 == 0:
             accuracy = accuracy_cal(model) 
             model.train()
-            print(f"Epoch {epoch+1}, Accuracy {accuracy:.2f}%, Loss: {running_loss / len(trainloader):.4f}")
+            print(f"Epoch {epoch+1}, Accuracy {accuracy:.2f}%, Loss: {running_loss / len(trainloader):.4f}", flush=True)
             if accuracy >= accuracy_threshold:
                 stop_training = True
-                print(f"Accuracy reached {accuracy_threshold}%, saving model and stopping training.")
+                print(f"Accuracy reached {accuracy_threshold}%, saving model and stopping training.", flush=True)
                 torch.save(model.state_dict(), PRE_TRAINED)  # 保存模型
                 break
     if stop_training:
@@ -111,7 +111,7 @@ if not os.path.exists(LC_LOC):
     os.makedirs(LC_LOC)
 
 # 训练模型
-num_epochs = 1
+num_epochs = 20
 
 full_accuracy = []
 decomposed_full_accuracy = []
@@ -279,7 +279,7 @@ for epoch in range(num_epochs):
             lc_accuracy.append(accuracy_cal(restored_lc_model))
             restored_lc_model = restored_lc_model.to('cpu')
             print("Full accuracy: {}, LC accuracy: {}, Decomposed-Full accuracy: {}, Decomposed-Restored accuracy: {}".format(
-                full_accuracy[-1], lc_accuracy[-1], decomposed_full_accuracy[-1], restored_accuracy[-1]))
+                full_accuracy[-1], lc_accuracy[-1], decomposed_full_accuracy[-1], restored_accuracy[-1]), flush=True)
 
 
 
@@ -345,10 +345,10 @@ a, b = evaluate_compression(uncompressed_size, compressed_size)
 compressed_size, uncompressed_size = getsize(LC_LOC)
 a1, b1 = evaluate_compression(uncompressed_size, compressed_size)
 
-print("LC-Checkpoint + GZIP")
-print("Compression Ratio: {}%, Space Savings: {}%".format(a1, b1))
-print("LoRA + LC-Checkpoint + GZIP")
-print("Compression Ratio: {}%, Space Savings: {}%".format(a, b))
+print("LC-Checkpoint + GZIP", flush=True)
+print("Compression Ratio: {}%, Space Savings: {}%".format(a1, b1), flush=True)
+print("LoRA + LC-Checkpoint + GZIP", flush=True)
+print("Compression Ratio: {}%, Space Savings: {}%".format(a, b), flush=True)
 
 data = {
     "full_acc" : full_accuracy,

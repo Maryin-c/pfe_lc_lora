@@ -4,7 +4,7 @@
 #SBATCH --output=./my_test/res/alexnet_mnist_res.txt
 #SBATCH --error=./my_test/res/alexnet_mnist_error.txt
 #SBATCH --time=48:00:00
-#SBATCH --gpus=1
+#SBATCH --gres=gpu:a100-40:1
 #SBATCH --mem=32G
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=e1350606@u.nus.edu
