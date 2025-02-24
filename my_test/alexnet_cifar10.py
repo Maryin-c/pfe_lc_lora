@@ -70,7 +70,7 @@ def accuracy_cal(model):
 model = AlexNet_CIFAR10().to(device)
 criterion = nn.CrossEntropyLoss()  # 交叉熵损失
 # optimizer = optim.Adam(model.parameters(), lr=0.01)  # Adam 优化器
-optimizer = optim.SGD(model.parameters(), lr=0.00001)  # Adam 优化器
+optimizer = optim.SGD(model.parameters(), lr=0.01)  # Adam 优化器
 
 accuracy_threshold = 75
 # 训练模型
