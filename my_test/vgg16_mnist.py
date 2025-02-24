@@ -116,7 +116,7 @@ if not os.path.exists(LC_LOC):
     os.makedirs(LC_LOC)
 
 # 训练模型
-num_epochs = 1
+num_epochs = 20
 
 full_accuracy = []
 decomposed_full_accuracy = []
