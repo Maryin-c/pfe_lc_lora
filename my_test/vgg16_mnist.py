@@ -39,9 +39,9 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False)
 # 选择设备（GPU or CPU）
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-PRE_TRAINED = "./" + TASK_NAME + "/pretrained_model.pth"
-if not os.path.exists("./" + TASK_NAME):
-    os.makedirs("./" + TASK_NAME)
+PRE_TRAINED = "./my_test/" + TASK_NAME + "/pretrained_model.pth"
+if not os.path.exists("./my_test/" + TASK_NAME):
+    os.makedirs("./my_test/" + TASK_NAME)
 
 def accuracy_cal(model):
     model.eval()
@@ -107,11 +107,11 @@ DECOMPOSED_LAYERS = ['classifier.0.weight', 'classifier.4.weight', 'classifier.8
 RANK = -1
 SCALING = -1
 
-DLORA_LC_LOC = "./" + TASK_NAME + "/dlora-lc"
+DLORA_LC_LOC = "./my_test/" + TASK_NAME + "/dlora-lc"
 if not os.path.exists(DLORA_LC_LOC):
     os.makedirs(DLORA_LC_LOC)
 
-LC_LOC = "./" + TASK_NAME + "./lc"
+LC_LOC = "./my_test/" + TASK_NAME + "/lc"
 if not os.path.exists(LC_LOC):
     os.makedirs(LC_LOC)
 
@@ -300,7 +300,7 @@ plt.xlabel("Epoch")
 plt.legend()
 # plt.show()
 
-plt.savefig("./" + TASK_NAME + "/VGG_16_No_Lite_accuracy.png", dpi=300, bbox_inches='tight')
+plt.savefig("./my_test/" + TASK_NAME + "/VGG_16_No_Lite_accuracy.png", dpi=300, bbox_inches='tight')
 plt.close()  # 关闭图像，释放资源
 
 rangex = [x for x in range(0, 120) if x % 6 == 0]
@@ -332,10 +332,9 @@ plt.ylabel("Absolute Accuracy Loss")
 plt.xlabel("Epoch")
 # plt.show()
 
-plt.savefig("./" + TASK_NAME + "/VGG_16_No_Lite_loss.png", dpi=300, bbox_inches='tight')
+plt.savefig("./my_test/" + TASK_NAME + "/VGG_16_No_Lite_loss.png", dpi=300, bbox_inches='tight')
 plt.close()  # 关闭图像，释放资源
 
-import math
 def getsize(sl):
     dir = [x for x in os.listdir(sl)]
     csize, usize = 0, 0
@@ -356,12 +355,11 @@ print("Compression Ratio: {}%, Space Savings: {}%".format(a1, b1))
 print("LoRA + LC-Checkpoint + GZIP")
 print("Compression Ratio: {}%, Space Savings: {}%".format(a, b))
 
-import json
 data = {
     "full_acc" : full_accuracy,
     "decomposed_restored_accuracy" : restored_accuracy,
     "decomposed_full_accuracy" : decomposed_full_accuracy,
     "lc_restored_accuracy" : lc_accuracy
 }
-with open("./" + TASK_NAME + "/data.json", 'w') as f:
+with open("./my_test/" + TASK_NAME + "/data.json", 'w') as f:
     json.dump(data, f)
