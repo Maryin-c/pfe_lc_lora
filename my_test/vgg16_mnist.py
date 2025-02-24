@@ -69,6 +69,7 @@ accuracy_threshold = 75
 num_epochs = 10
 
 stop_training = False
+print("start creating checking point")
 for epoch in range(num_epochs):
     model.train()
     running_loss = 0.0
