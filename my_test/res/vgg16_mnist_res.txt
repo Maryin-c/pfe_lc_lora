@@ -1,0 +1,22 @@
+Epoch 1, Accuracy 11.35%, Loss: 0.0014
+Epoch 1, Accuracy 94.33%, Loss: 0.0270
+Accuracy reached 75%, saving model and stopping training.
+Full accuracy: 96.69, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.15, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.61, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.76, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.68, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.53, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.63, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.7, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 99.05, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.31, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.13, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 99.06, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.53, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 99.17, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 99.04, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.99, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.99, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 98.59, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8
+Full accuracy: 99.23, LC accuracy: 9.8, Decomposed-Full accuracy: 9.8, Decomposed-Restored accuracy: 9.8

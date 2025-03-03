@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/e/e1350606/pfe_lc_lora/./my_test/vgg_mnist.py", line 130, in <module>
+    baseline_model.load_state_dict(torch.load(PRE_TRAINED))
+  File "/home/e/e1350606/miniconda3/envs/py310/lib/python3.10/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/home/e/e1350606/miniconda3/envs/py310/lib/python3.10/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/e/e1350606/miniconda3/envs/py310/lib/python3.10/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './my_test/vgglite_mnist/pretrained_model.pth'
