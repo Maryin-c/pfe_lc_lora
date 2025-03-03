@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=alexnet_cifar
-#SBATCH --output=./my_test/res/alexnet_cifar10_res.txt
-#SBATCH --error=./my_test/res/alexnet_cifar10_error.txt
+#SBATCH --output=./my_test/res/alexnet_cifar10_res_append.txt
+#SBATCH --error=./my_test/res/alexnet_cifar10_error_append.txt
 #SBATCH --time=48:00:00
 #SBATCH --gpus=1
 #SBATCH --mem=32G

@@ -1,4 +1,291 @@
-LC-Checkpoint + GZIP
-Compression Ratio: 5.392%, Space Savings: -1754.4589999999998%
-LoRA + LC-Checkpoint + GZIP
-Compression Ratio: 171.524%, Space Savings: 41.699000000000005%
+Epoch 1, Accuracy 10.09%, Loss: 0.0012
+Epoch 1, Accuracy 10.27%, Loss: 0.1241
+Epoch 1, Accuracy 11.35%, Loss: 0.2469
+Epoch 1, Accuracy 11.35%, Loss: 0.3696
+Epoch 1, Accuracy 11.35%, Loss: 0.4923
+Epoch 1, Accuracy 11.35%, Loss: 0.6150
+Epoch 1, Accuracy 11.35%, Loss: 0.7378
+Epoch 1, Accuracy 11.35%, Loss: 0.8605
+Epoch 1, Accuracy 11.35%, Loss: 0.9833
+Epoch 1, Accuracy 11.35%, Loss: 1.1060
+Epoch 1, Accuracy 11.35%, Loss: 1.2288
+Epoch 1, Accuracy 11.35%, Loss: 1.3514
+Epoch 1, Accuracy 11.35%, Loss: 1.4742
+Epoch 1, Accuracy 11.35%, Loss: 1.5969
+Epoch 1, Accuracy 11.35%, Loss: 1.7197
+Epoch 1, Accuracy 11.35%, Loss: 1.8424
+Epoch 1, Accuracy 11.35%, Loss: 1.9651
+Epoch 1, Accuracy 11.35%, Loss: 2.0877
+Epoch 1, Accuracy 11.35%, Loss: 2.2103
+Epoch 2, Accuracy 11.35%, Loss: 0.0012
+Epoch 2, Accuracy 11.35%, Loss: 0.1238
+Epoch 2, Accuracy 11.35%, Loss: 0.2464
+Epoch 2, Accuracy 11.35%, Loss: 0.3691
+Epoch 2, Accuracy 11.35%, Loss: 0.4917
+Epoch 2, Accuracy 11.35%, Loss: 0.6143
+Epoch 2, Accuracy 11.35%, Loss: 0.7367
+Epoch 2, Accuracy 11.35%, Loss: 0.8593
+Epoch 2, Accuracy 11.35%, Loss: 0.9818
+Epoch 2, Accuracy 11.35%, Loss: 1.1043
+Epoch 2, Accuracy 11.35%, Loss: 1.2267
+Epoch 2, Accuracy 11.35%, Loss: 1.3490
+Epoch 2, Accuracy 11.35%, Loss: 1.4710
+Epoch 2, Accuracy 14.15%, Loss: 1.5930
+Epoch 2, Accuracy 21.13%, Loss: 1.7146
+Epoch 2, Accuracy 33.47%, Loss: 1.8354
+Epoch 2, Accuracy 61.39%, Loss: 1.9525
+Epoch 2, Accuracy 76.49%, Loss: 2.0291
+Accuracy reached 75%, saving model and stopping training.
+Full accuracy: 84.2, LC accuracy: 85.04, Decomposed-Full accuracy: 80.16, Decomposed-Restored accuracy: 80.16
+Full accuracy: 84.66, LC accuracy: 86.11, Decomposed-Full accuracy: 80.94, Decomposed-Restored accuracy: 80.94
+Full accuracy: 92.02, LC accuracy: 92.05, Decomposed-Full accuracy: 81.33, Decomposed-Restored accuracy: 81.33
+Full accuracy: 92.12, LC accuracy: 92.31, Decomposed-Full accuracy: 82.14, Decomposed-Restored accuracy: 82.14
+Full accuracy: 92.2, LC accuracy: 92.55, Decomposed-Full accuracy: 83.36, Decomposed-Restored accuracy: 83.36
+Full accuracy: 93.53, LC accuracy: 93.07, Decomposed-Full accuracy: 81.93, Decomposed-Restored accuracy: 81.93
+Full accuracy: 93.21, LC accuracy: 93.45, Decomposed-Full accuracy: 84.21, Decomposed-Restored accuracy: 84.21
+Full accuracy: 94.47, LC accuracy: 94.36, Decomposed-Full accuracy: 83.3, Decomposed-Restored accuracy: 83.3
+Full accuracy: 94.61, LC accuracy: 94.29, Decomposed-Full accuracy: 83.74, Decomposed-Restored accuracy: 83.74
+Full accuracy: 95.35, LC accuracy: 95.09, Decomposed-Full accuracy: 84.1, Decomposed-Restored accuracy: 84.1
+Full accuracy: 95.32, LC accuracy: 94.72, Decomposed-Full accuracy: 84.42, Decomposed-Restored accuracy: 84.42
+Full accuracy: 95.08, LC accuracy: 95.46, Decomposed-Full accuracy: 84.21, Decomposed-Restored accuracy: 84.21
+Full accuracy: 95.21, LC accuracy: 95.4, Decomposed-Full accuracy: 84.35, Decomposed-Restored accuracy: 84.35
+Full accuracy: 95.19, LC accuracy: 95.2, Decomposed-Full accuracy: 84.31, Decomposed-Restored accuracy: 84.31
+Full accuracy: 95.87, LC accuracy: 96.02, Decomposed-Full accuracy: 83.8, Decomposed-Restored accuracy: 83.8
+Full accuracy: 95.85, LC accuracy: 95.94, Decomposed-Full accuracy: 84.73, Decomposed-Restored accuracy: 84.73
+Full accuracy: 96.25, LC accuracy: 96.25, Decomposed-Full accuracy: 84.67, Decomposed-Restored accuracy: 84.67
+Full accuracy: 96.32, LC accuracy: 96.11, Decomposed-Full accuracy: 84.79, Decomposed-Restored accuracy: 84.79
+Full accuracy: 96.57, LC accuracy: 96.43, Decomposed-Full accuracy: 85.24, Decomposed-Restored accuracy: 85.24
+Full accuracy: 96.55, LC accuracy: 96.4, Decomposed-Full accuracy: 85.0, Decomposed-Restored accuracy: 85.0
+Full accuracy: 96.8, LC accuracy: 96.83, Decomposed-Full accuracy: 85.51, Decomposed-Restored accuracy: 85.51
+Full accuracy: 96.71, LC accuracy: 96.65, Decomposed-Full accuracy: 85.44, Decomposed-Restored accuracy: 85.44
+Full accuracy: 97.08, LC accuracy: 96.91, Decomposed-Full accuracy: 85.72, Decomposed-Restored accuracy: 85.72
+Full accuracy: 96.74, LC accuracy: 96.92, Decomposed-Full accuracy: 85.97, Decomposed-Restored accuracy: 85.97
+Full accuracy: 97.09, LC accuracy: 96.96, Decomposed-Full accuracy: 85.73, Decomposed-Restored accuracy: 85.73
+Full accuracy: 97.17, LC accuracy: 97.25, Decomposed-Full accuracy: 85.92, Decomposed-Restored accuracy: 85.92
+Full accuracy: 97.03, LC accuracy: 96.89, Decomposed-Full accuracy: 86.1, Decomposed-Restored accuracy: 86.1
+Full accuracy: 97.36, LC accuracy: 97.3, Decomposed-Full accuracy: 84.97, Decomposed-Restored accuracy: 84.97
+Full accuracy: 97.16, LC accuracy: 97.06, Decomposed-Full accuracy: 86.03, Decomposed-Restored accuracy: 86.03
+Full accuracy: 97.21, LC accuracy: 97.09, Decomposed-Full accuracy: 85.53, Decomposed-Restored accuracy: 85.53
+Full accuracy: 97.3, LC accuracy: 97.29, Decomposed-Full accuracy: 85.78, Decomposed-Restored accuracy: 85.78
+Full accuracy: 97.57, LC accuracy: 97.45, Decomposed-Full accuracy: 86.1, Decomposed-Restored accuracy: 86.1
+Full accuracy: 97.72, LC accuracy: 97.56, Decomposed-Full accuracy: 85.52, Decomposed-Restored accuracy: 85.52
+Full accuracy: 97.5, LC accuracy: 97.46, Decomposed-Full accuracy: 85.5, Decomposed-Restored accuracy: 85.5
+Full accuracy: 97.47, LC accuracy: 97.66, Decomposed-Full accuracy: 85.59, Decomposed-Restored accuracy: 85.59
+Full accuracy: 97.7, LC accuracy: 97.59, Decomposed-Full accuracy: 86.19, Decomposed-Restored accuracy: 86.19
+Full accuracy: 97.64, LC accuracy: 97.73, Decomposed-Full accuracy: 86.13, Decomposed-Restored accuracy: 86.13
+Full accuracy: 97.75, LC accuracy: 97.52, Decomposed-Full accuracy: 85.69, Decomposed-Restored accuracy: 85.69
+Full accuracy: 97.57, LC accuracy: 97.8, Decomposed-Full accuracy: 86.35, Decomposed-Restored accuracy: 86.35
+Full accuracy: 97.85, LC accuracy: 97.69, Decomposed-Full accuracy: 86.5, Decomposed-Restored accuracy: 86.5
+Full accuracy: 97.79, LC accuracy: 97.8, Decomposed-Full accuracy: 85.56, Decomposed-Restored accuracy: 85.56
+Full accuracy: 97.83, LC accuracy: 97.81, Decomposed-Full accuracy: 86.36, Decomposed-Restored accuracy: 86.36
+Full accuracy: 97.95, LC accuracy: 97.93, Decomposed-Full accuracy: 86.07, Decomposed-Restored accuracy: 86.07
+Full accuracy: 98.0, LC accuracy: 97.88, Decomposed-Full accuracy: 85.18, Decomposed-Restored accuracy: 85.18
+Full accuracy: 97.85, LC accuracy: 97.73, Decomposed-Full accuracy: 86.2, Decomposed-Restored accuracy: 86.2
+Full accuracy: 97.97, LC accuracy: 98.0, Decomposed-Full accuracy: 86.04, Decomposed-Restored accuracy: 86.04
+Full accuracy: 97.99, LC accuracy: 97.75, Decomposed-Full accuracy: 86.62, Decomposed-Restored accuracy: 86.62
+Full accuracy: 98.05, LC accuracy: 98.06, Decomposed-Full accuracy: 85.34, Decomposed-Restored accuracy: 85.34
+Full accuracy: 98.15, LC accuracy: 98.11, Decomposed-Full accuracy: 84.75, Decomposed-Restored accuracy: 84.75
+Full accuracy: 97.97, LC accuracy: 97.86, Decomposed-Full accuracy: 86.08, Decomposed-Restored accuracy: 86.08
+Full accuracy: 98.06, LC accuracy: 97.88, Decomposed-Full accuracy: 86.55, Decomposed-Restored accuracy: 86.55
+Full accuracy: 98.22, LC accuracy: 97.97, Decomposed-Full accuracy: 86.13, Decomposed-Restored accuracy: 86.13
+Full accuracy: 98.14, LC accuracy: 98.16, Decomposed-Full accuracy: 86.2, Decomposed-Restored accuracy: 86.2
+Full accuracy: 97.86, LC accuracy: 97.88, Decomposed-Full accuracy: 86.09, Decomposed-Restored accuracy: 86.09
+Full accuracy: 98.23, LC accuracy: 98.13, Decomposed-Full accuracy: 86.79, Decomposed-Restored accuracy: 86.79
+Full accuracy: 98.43, LC accuracy: 98.3, Decomposed-Full accuracy: 86.68, Decomposed-Restored accuracy: 86.68
+Full accuracy: 98.26, LC accuracy: 98.27, Decomposed-Full accuracy: 86.16, Decomposed-Restored accuracy: 86.16
+Full accuracy: 98.17, LC accuracy: 98.21, Decomposed-Full accuracy: 86.16, Decomposed-Restored accuracy: 86.16
+Full accuracy: 98.54, LC accuracy: 98.49, Decomposed-Full accuracy: 85.75, Decomposed-Restored accuracy: 85.75
+Full accuracy: 98.34, LC accuracy: 98.4, Decomposed-Full accuracy: 86.56, Decomposed-Restored accuracy: 86.56
+Full accuracy: 98.25, LC accuracy: 98.4, Decomposed-Full accuracy: 85.46, Decomposed-Restored accuracy: 85.46
+Full accuracy: 98.37, LC accuracy: 98.34, Decomposed-Full accuracy: 85.56, Decomposed-Restored accuracy: 85.56
+Full accuracy: 98.34, LC accuracy: 98.44, Decomposed-Full accuracy: 85.22, Decomposed-Restored accuracy: 85.22
+Full accuracy: 98.38, LC accuracy: 98.29, Decomposed-Full accuracy: 87.13, Decomposed-Restored accuracy: 87.13
+Full accuracy: 98.37, LC accuracy: 98.46, Decomposed-Full accuracy: 85.96, Decomposed-Restored accuracy: 85.96
+Full accuracy: 98.42, LC accuracy: 98.5, Decomposed-Full accuracy: 86.84, Decomposed-Restored accuracy: 86.84
+Full accuracy: 98.42, LC accuracy: 98.47, Decomposed-Full accuracy: 86.57, Decomposed-Restored accuracy: 86.57
+Full accuracy: 98.34, LC accuracy: 98.46, Decomposed-Full accuracy: 87.19, Decomposed-Restored accuracy: 87.19
+Full accuracy: 98.49, LC accuracy: 98.37, Decomposed-Full accuracy: 86.51, Decomposed-Restored accuracy: 86.51
+Full accuracy: 98.37, LC accuracy: 98.39, Decomposed-Full accuracy: 86.15, Decomposed-Restored accuracy: 86.15
+Full accuracy: 98.52, LC accuracy: 98.53, Decomposed-Full accuracy: 86.74, Decomposed-Restored accuracy: 86.74
+Full accuracy: 98.35, LC accuracy: 98.47, Decomposed-Full accuracy: 87.1, Decomposed-Restored accuracy: 87.1
+Full accuracy: 98.53, LC accuracy: 98.52, Decomposed-Full accuracy: 86.52, Decomposed-Restored accuracy: 86.52
+Full accuracy: 98.42, LC accuracy: 98.49, Decomposed-Full accuracy: 86.76, Decomposed-Restored accuracy: 86.76
+Full accuracy: 98.6, LC accuracy: 98.52, Decomposed-Full accuracy: 86.4, Decomposed-Restored accuracy: 86.4
+Full accuracy: 98.63, LC accuracy: 98.66, Decomposed-Full accuracy: 87.09, Decomposed-Restored accuracy: 87.09
+Full accuracy: 98.35, LC accuracy: 98.51, Decomposed-Full accuracy: 85.61, Decomposed-Restored accuracy: 85.61
+Full accuracy: 98.51, LC accuracy: 98.54, Decomposed-Full accuracy: 86.8, Decomposed-Restored accuracy: 86.8
+Full accuracy: 98.48, LC accuracy: 98.5, Decomposed-Full accuracy: 86.8, Decomposed-Restored accuracy: 86.8
+Full accuracy: 98.59, LC accuracy: 98.6, Decomposed-Full accuracy: 86.96, Decomposed-Restored accuracy: 86.96
+Full accuracy: 98.55, LC accuracy: 98.6, Decomposed-Full accuracy: 86.93, Decomposed-Restored accuracy: 86.93
+Full accuracy: 98.28, LC accuracy: 98.41, Decomposed-Full accuracy: 86.96, Decomposed-Restored accuracy: 86.96
+Full accuracy: 98.53, LC accuracy: 98.62, Decomposed-Full accuracy: 86.38, Decomposed-Restored accuracy: 86.38
+Full accuracy: 98.39, LC accuracy: 98.42, Decomposed-Full accuracy: 86.66, Decomposed-Restored accuracy: 86.66
+Full accuracy: 98.57, LC accuracy: 98.72, Decomposed-Full accuracy: 86.11, Decomposed-Restored accuracy: 86.11
+Full accuracy: 98.61, LC accuracy: 98.69, Decomposed-Full accuracy: 87.03, Decomposed-Restored accuracy: 87.03
+Full accuracy: 98.65, LC accuracy: 98.67, Decomposed-Full accuracy: 85.94, Decomposed-Restored accuracy: 85.94
+Full accuracy: 98.65, LC accuracy: 98.69, Decomposed-Full accuracy: 86.32, Decomposed-Restored accuracy: 86.32
+Full accuracy: 98.64, LC accuracy: 98.7, Decomposed-Full accuracy: 87.45, Decomposed-Restored accuracy: 87.45
+Full accuracy: 98.7, LC accuracy: 98.73, Decomposed-Full accuracy: 86.16, Decomposed-Restored accuracy: 86.16
+Full accuracy: 98.7, LC accuracy: 98.73, Decomposed-Full accuracy: 87.24, Decomposed-Restored accuracy: 87.24
+Full accuracy: 98.73, LC accuracy: 98.64, Decomposed-Full accuracy: 86.22, Decomposed-Restored accuracy: 86.22
+Full accuracy: 98.68, LC accuracy: 98.67, Decomposed-Full accuracy: 87.05, Decomposed-Restored accuracy: 87.05
+Full accuracy: 98.73, LC accuracy: 98.72, Decomposed-Full accuracy: 87.32, Decomposed-Restored accuracy: 87.32
+Full accuracy: 98.58, LC accuracy: 98.57, Decomposed-Full accuracy: 86.68, Decomposed-Restored accuracy: 86.68
+Full accuracy: 98.71, LC accuracy: 98.66, Decomposed-Full accuracy: 87.11, Decomposed-Restored accuracy: 87.11
+Full accuracy: 98.58, LC accuracy: 98.64, Decomposed-Full accuracy: 87.44, Decomposed-Restored accuracy: 87.44
+Full accuracy: 98.81, LC accuracy: 98.7, Decomposed-Full accuracy: 87.16, Decomposed-Restored accuracy: 87.16
+Full accuracy: 98.82, LC accuracy: 98.76, Decomposed-Full accuracy: 87.09, Decomposed-Restored accuracy: 87.09
+Full accuracy: 98.72, LC accuracy: 98.82, Decomposed-Full accuracy: 86.95, Decomposed-Restored accuracy: 86.95
+Full accuracy: 98.87, LC accuracy: 98.81, Decomposed-Full accuracy: 86.87, Decomposed-Restored accuracy: 86.87
+Full accuracy: 98.85, LC accuracy: 98.85, Decomposed-Full accuracy: 86.89, Decomposed-Restored accuracy: 86.89
+Full accuracy: 98.82, LC accuracy: 98.8, Decomposed-Full accuracy: 86.67, Decomposed-Restored accuracy: 86.67
+Full accuracy: 98.77, LC accuracy: 98.79, Decomposed-Full accuracy: 87.19, Decomposed-Restored accuracy: 87.19
+Full accuracy: 98.85, LC accuracy: 98.8, Decomposed-Full accuracy: 86.02, Decomposed-Restored accuracy: 86.02
+Full accuracy: 98.83, LC accuracy: 98.84, Decomposed-Full accuracy: 87.34, Decomposed-Restored accuracy: 87.34
+Full accuracy: 98.84, LC accuracy: 98.85, Decomposed-Full accuracy: 86.6, Decomposed-Restored accuracy: 86.6
+Full accuracy: 98.89, LC accuracy: 98.76, Decomposed-Full accuracy: 86.41, Decomposed-Restored accuracy: 86.41
+Full accuracy: 98.89, LC accuracy: 98.76, Decomposed-Full accuracy: 86.91, Decomposed-Restored accuracy: 86.91
+Full accuracy: 98.81, LC accuracy: 98.74, Decomposed-Full accuracy: 87.07, Decomposed-Restored accuracy: 87.07
+Full accuracy: 98.77, LC accuracy: 98.77, Decomposed-Full accuracy: 87.66, Decomposed-Restored accuracy: 87.66
+Full accuracy: 98.87, LC accuracy: 98.89, Decomposed-Full accuracy: 86.7, Decomposed-Restored accuracy: 86.7
+Full accuracy: 98.82, LC accuracy: 98.83, Decomposed-Full accuracy: 87.07, Decomposed-Restored accuracy: 87.07
+Full accuracy: 98.82, LC accuracy: 98.87, Decomposed-Full accuracy: 87.76, Decomposed-Restored accuracy: 87.76
+Full accuracy: 98.73, LC accuracy: 98.75, Decomposed-Full accuracy: 87.13, Decomposed-Restored accuracy: 87.13
+Full accuracy: 98.9, LC accuracy: 98.78, Decomposed-Full accuracy: 86.73, Decomposed-Restored accuracy: 86.73
+Full accuracy: 98.71, LC accuracy: 98.86, Decomposed-Full accuracy: 87.17, Decomposed-Restored accuracy: 87.17
+Full accuracy: 98.77, LC accuracy: 98.85, Decomposed-Full accuracy: 87.33, Decomposed-Restored accuracy: 87.33
+Full accuracy: 98.86, LC accuracy: 98.87, Decomposed-Full accuracy: 86.42, Decomposed-Restored accuracy: 86.42
+Full accuracy: 98.97, LC accuracy: 98.85, Decomposed-Full accuracy: 86.85, Decomposed-Restored accuracy: 86.85
+Full accuracy: 98.94, LC accuracy: 98.87, Decomposed-Full accuracy: 86.62, Decomposed-Restored accuracy: 86.62
+Full accuracy: 98.72, LC accuracy: 98.79, Decomposed-Full accuracy: 86.88, Decomposed-Restored accuracy: 86.88
+Full accuracy: 98.89, LC accuracy: 98.96, Decomposed-Full accuracy: 87.37, Decomposed-Restored accuracy: 87.37
+Full accuracy: 98.88, LC accuracy: 98.59, Decomposed-Full accuracy: 86.63, Decomposed-Restored accuracy: 86.63
+Full accuracy: 98.94, LC accuracy: 98.81, Decomposed-Full accuracy: 86.75, Decomposed-Restored accuracy: 86.75
+Full accuracy: 98.92, LC accuracy: 98.93, Decomposed-Full accuracy: 87.15, Decomposed-Restored accuracy: 87.15
+Full accuracy: 98.81, LC accuracy: 98.89, Decomposed-Full accuracy: 86.99, Decomposed-Restored accuracy: 86.99
+Full accuracy: 98.9, LC accuracy: 98.86, Decomposed-Full accuracy: 87.08, Decomposed-Restored accuracy: 87.08
+Full accuracy: 98.78, LC accuracy: 98.87, Decomposed-Full accuracy: 87.48, Decomposed-Restored accuracy: 87.48
+Full accuracy: 98.87, LC accuracy: 98.86, Decomposed-Full accuracy: 86.92, Decomposed-Restored accuracy: 86.92
+Full accuracy: 98.7, LC accuracy: 98.72, Decomposed-Full accuracy: 86.47, Decomposed-Restored accuracy: 86.47
+Full accuracy: 98.88, LC accuracy: 98.81, Decomposed-Full accuracy: 87.18, Decomposed-Restored accuracy: 87.18
+Full accuracy: 98.89, LC accuracy: 98.83, Decomposed-Full accuracy: 87.15, Decomposed-Restored accuracy: 87.15
+Full accuracy: 98.84, LC accuracy: 98.88, Decomposed-Full accuracy: 87.42, Decomposed-Restored accuracy: 87.42
+Full accuracy: 98.87, LC accuracy: 98.67, Decomposed-Full accuracy: 87.37, Decomposed-Restored accuracy: 87.37
+Full accuracy: 98.76, LC accuracy: 98.73, Decomposed-Full accuracy: 87.08, Decomposed-Restored accuracy: 87.08
+Full accuracy: 98.94, LC accuracy: 98.86, Decomposed-Full accuracy: 87.66, Decomposed-Restored accuracy: 87.66
+Full accuracy: 99.0, LC accuracy: 98.94, Decomposed-Full accuracy: 87.82, Decomposed-Restored accuracy: 87.82
+Full accuracy: 98.95, LC accuracy: 98.79, Decomposed-Full accuracy: 87.27, Decomposed-Restored accuracy: 87.27
+Full accuracy: 98.89, LC accuracy: 98.86, Decomposed-Full accuracy: 87.42, Decomposed-Restored accuracy: 87.42
+Full accuracy: 99.0, LC accuracy: 99.02, Decomposed-Full accuracy: 87.04, Decomposed-Restored accuracy: 87.04
+Full accuracy: 99.07, LC accuracy: 98.97, Decomposed-Full accuracy: 86.77, Decomposed-Restored accuracy: 86.77
+Full accuracy: 99.02, LC accuracy: 98.97, Decomposed-Full accuracy: 86.83, Decomposed-Restored accuracy: 86.83
+Full accuracy: 99.01, LC accuracy: 98.99, Decomposed-Full accuracy: 87.41, Decomposed-Restored accuracy: 87.41
+Full accuracy: 98.98, LC accuracy: 98.94, Decomposed-Full accuracy: 86.93, Decomposed-Restored accuracy: 86.93
+Full accuracy: 98.95, LC accuracy: 99.02, Decomposed-Full accuracy: 86.81, Decomposed-Restored accuracy: 86.81
+Full accuracy: 98.96, LC accuracy: 98.93, Decomposed-Full accuracy: 86.62, Decomposed-Restored accuracy: 86.62
+Full accuracy: 98.96, LC accuracy: 98.92, Decomposed-Full accuracy: 87.16, Decomposed-Restored accuracy: 87.16
+Full accuracy: 98.78, LC accuracy: 98.94, Decomposed-Full accuracy: 87.24, Decomposed-Restored accuracy: 87.24
+Full accuracy: 98.95, LC accuracy: 98.91, Decomposed-Full accuracy: 87.13, Decomposed-Restored accuracy: 87.13
+Full accuracy: 98.92, LC accuracy: 98.98, Decomposed-Full accuracy: 87.31, Decomposed-Restored accuracy: 87.31
+Full accuracy: 98.9, LC accuracy: 98.93, Decomposed-Full accuracy: 87.56, Decomposed-Restored accuracy: 87.56
+Full accuracy: 98.98, LC accuracy: 99.02, Decomposed-Full accuracy: 87.3, Decomposed-Restored accuracy: 87.3
+Full accuracy: 99.07, LC accuracy: 99.0, Decomposed-Full accuracy: 87.02, Decomposed-Restored accuracy: 87.02
+Full accuracy: 99.07, LC accuracy: 99.05, Decomposed-Full accuracy: 87.12, Decomposed-Restored accuracy: 87.12
+Full accuracy: 98.94, LC accuracy: 99.04, Decomposed-Full accuracy: 86.83, Decomposed-Restored accuracy: 86.83
+Full accuracy: 98.94, LC accuracy: 98.95, Decomposed-Full accuracy: 87.2, Decomposed-Restored accuracy: 87.2
+Full accuracy: 99.0, LC accuracy: 98.99, Decomposed-Full accuracy: 87.39, Decomposed-Restored accuracy: 87.39
+Full accuracy: 99.04, LC accuracy: 99.11, Decomposed-Full accuracy: 87.32, Decomposed-Restored accuracy: 87.32
+Full accuracy: 99.06, LC accuracy: 99.07, Decomposed-Full accuracy: 87.16, Decomposed-Restored accuracy: 87.16
+Full accuracy: 99.0, LC accuracy: 98.84, Decomposed-Full accuracy: 87.36, Decomposed-Restored accuracy: 87.36
+Full accuracy: 99.04, LC accuracy: 99.08, Decomposed-Full accuracy: 86.44, Decomposed-Restored accuracy: 86.44
+Full accuracy: 99.09, LC accuracy: 99.02, Decomposed-Full accuracy: 87.13, Decomposed-Restored accuracy: 87.13
+Full accuracy: 99.13, LC accuracy: 99.01, Decomposed-Full accuracy: 87.52, Decomposed-Restored accuracy: 87.52
+Full accuracy: 98.99, LC accuracy: 98.92, Decomposed-Full accuracy: 87.18, Decomposed-Restored accuracy: 87.18
+Full accuracy: 99.04, LC accuracy: 98.95, Decomposed-Full accuracy: 87.13, Decomposed-Restored accuracy: 87.13
+Full accuracy: 99.06, LC accuracy: 98.86, Decomposed-Full accuracy: 87.59, Decomposed-Restored accuracy: 87.59
+Full accuracy: 99.0, LC accuracy: 98.98, Decomposed-Full accuracy: 87.57, Decomposed-Restored accuracy: 87.57
+Full accuracy: 99.04, LC accuracy: 98.92, Decomposed-Full accuracy: 87.43, Decomposed-Restored accuracy: 87.43
+Full accuracy: 98.98, LC accuracy: 99.03, Decomposed-Full accuracy: 87.23, Decomposed-Restored accuracy: 87.23
+Full accuracy: 99.03, LC accuracy: 98.98, Decomposed-Full accuracy: 87.45, Decomposed-Restored accuracy: 87.45
+Full accuracy: 98.95, LC accuracy: 99.01, Decomposed-Full accuracy: 87.27, Decomposed-Restored accuracy: 87.27
+Full accuracy: 99.07, LC accuracy: 99.08, Decomposed-Full accuracy: 86.74, Decomposed-Restored accuracy: 86.74
+Full accuracy: 98.98, LC accuracy: 99.04, Decomposed-Full accuracy: 86.77, Decomposed-Restored accuracy: 86.77
+Full accuracy: 99.0, LC accuracy: 98.99, Decomposed-Full accuracy: 87.16, Decomposed-Restored accuracy: 87.16
+Full accuracy: 99.05, LC accuracy: 98.99, Decomposed-Full accuracy: 87.73, Decomposed-Restored accuracy: 87.73
+Full accuracy: 99.06, LC accuracy: 99.05, Decomposed-Full accuracy: 86.99, Decomposed-Restored accuracy: 86.99
+Full accuracy: 99.04, LC accuracy: 99.05, Decomposed-Full accuracy: 87.3, Decomposed-Restored accuracy: 87.3
+Full accuracy: 99.08, LC accuracy: 99.03, Decomposed-Full accuracy: 86.66, Decomposed-Restored accuracy: 86.66
+Full accuracy: 99.15, LC accuracy: 99.07, Decomposed-Full accuracy: 87.3, Decomposed-Restored accuracy: 87.3
+Full accuracy: 99.09, LC accuracy: 99.07, Decomposed-Full accuracy: 87.54, Decomposed-Restored accuracy: 87.54
+Full accuracy: 99.05, LC accuracy: 99.09, Decomposed-Full accuracy: 87.24, Decomposed-Restored accuracy: 87.24
+Full accuracy: 99.02, LC accuracy: 99.0, Decomposed-Full accuracy: 87.71, Decomposed-Restored accuracy: 87.71
+Full accuracy: 99.08, LC accuracy: 99.15, Decomposed-Full accuracy: 86.95, Decomposed-Restored accuracy: 86.95
+Full accuracy: 99.02, LC accuracy: 99.12, Decomposed-Full accuracy: 86.61, Decomposed-Restored accuracy: 86.61
+Full accuracy: 99.12, LC accuracy: 99.07, Decomposed-Full accuracy: 87.52, Decomposed-Restored accuracy: 87.52
+Full accuracy: 99.03, LC accuracy: 98.97, Decomposed-Full accuracy: 87.86, Decomposed-Restored accuracy: 87.86
+Full accuracy: 99.02, LC accuracy: 99.09, Decomposed-Full accuracy: 87.47, Decomposed-Restored accuracy: 87.47
+Full accuracy: 99.0, LC accuracy: 99.03, Decomposed-Full accuracy: 87.77, Decomposed-Restored accuracy: 87.77
+Full accuracy: 99.07, LC accuracy: 98.99, Decomposed-Full accuracy: 87.32, Decomposed-Restored accuracy: 87.32
+Full accuracy: 98.96, LC accuracy: 98.91, Decomposed-Full accuracy: 87.55, Decomposed-Restored accuracy: 87.55
+Full accuracy: 99.17, LC accuracy: 99.03, Decomposed-Full accuracy: 87.59, Decomposed-Restored accuracy: 87.59
+Full accuracy: 99.11, LC accuracy: 99.1, Decomposed-Full accuracy: 87.31, Decomposed-Restored accuracy: 87.31
+Full accuracy: 99.14, LC accuracy: 99.22, Decomposed-Full accuracy: 87.23, Decomposed-Restored accuracy: 87.23
+Full accuracy: 99.03, LC accuracy: 99.12, Decomposed-Full accuracy: 87.68, Decomposed-Restored accuracy: 87.68
+Full accuracy: 99.2, LC accuracy: 99.06, Decomposed-Full accuracy: 87.43, Decomposed-Restored accuracy: 87.43
+Full accuracy: 99.12, LC accuracy: 99.05, Decomposed-Full accuracy: 87.61, Decomposed-Restored accuracy: 87.61
+Full accuracy: 99.1, LC accuracy: 99.14, Decomposed-Full accuracy: 87.67, Decomposed-Restored accuracy: 87.67
+Full accuracy: 99.15, LC accuracy: 99.09, Decomposed-Full accuracy: 87.47, Decomposed-Restored accuracy: 87.47
+Full accuracy: 99.02, LC accuracy: 99.18, Decomposed-Full accuracy: 87.63, Decomposed-Restored accuracy: 87.63
+Full accuracy: 99.1, LC accuracy: 99.13, Decomposed-Full accuracy: 87.6, Decomposed-Restored accuracy: 87.6
+Full accuracy: 99.08, LC accuracy: 99.07, Decomposed-Full accuracy: 87.44, Decomposed-Restored accuracy: 87.44
+Full accuracy: 99.09, LC accuracy: 99.08, Decomposed-Full accuracy: 87.47, Decomposed-Restored accuracy: 87.47
+Full accuracy: 99.05, LC accuracy: 99.1, Decomposed-Full accuracy: 87.4, Decomposed-Restored accuracy: 87.4
+Full accuracy: 98.99, LC accuracy: 99.04, Decomposed-Full accuracy: 87.33, Decomposed-Restored accuracy: 87.33
+Full accuracy: 99.07, LC accuracy: 99.06, Decomposed-Full accuracy: 87.49, Decomposed-Restored accuracy: 87.49
+Full accuracy: 99.02, LC accuracy: 99.02, Decomposed-Full accuracy: 87.77, Decomposed-Restored accuracy: 87.77
+Full accuracy: 99.08, LC accuracy: 98.95, Decomposed-Full accuracy: 86.69, Decomposed-Restored accuracy: 86.69
+Full accuracy: 98.96, LC accuracy: 99.08, Decomposed-Full accuracy: 87.26, Decomposed-Restored accuracy: 87.26
+Full accuracy: 99.07, LC accuracy: 99.02, Decomposed-Full accuracy: 87.67, Decomposed-Restored accuracy: 87.67
+Full accuracy: 99.12, LC accuracy: 99.15, Decomposed-Full accuracy: 87.38, Decomposed-Restored accuracy: 87.38
+Full accuracy: 99.12, LC accuracy: 99.1, Decomposed-Full accuracy: 87.74, Decomposed-Restored accuracy: 87.74
+Full accuracy: 99.07, LC accuracy: 99.19, Decomposed-Full accuracy: 87.2, Decomposed-Restored accuracy: 87.2
+Full accuracy: 99.15, LC accuracy: 99.09, Decomposed-Full accuracy: 87.62, Decomposed-Restored accuracy: 87.62
+Full accuracy: 99.19, LC accuracy: 99.1, Decomposed-Full accuracy: 87.32, Decomposed-Restored accuracy: 87.32
+Full accuracy: 99.06, LC accuracy: 99.11, Decomposed-Full accuracy: 87.33, Decomposed-Restored accuracy: 87.33
+Full accuracy: 99.19, LC accuracy: 99.22, Decomposed-Full accuracy: 87.45, Decomposed-Restored accuracy: 87.45
+Full accuracy: 99.14, LC accuracy: 99.09, Decomposed-Full accuracy: 87.03, Decomposed-Restored accuracy: 87.03
+Full accuracy: 99.19, LC accuracy: 99.17, Decomposed-Full accuracy: 87.06, Decomposed-Restored accuracy: 87.06
+Full accuracy: 99.12, LC accuracy: 99.2, Decomposed-Full accuracy: 87.42, Decomposed-Restored accuracy: 87.42
+Full accuracy: 99.22, LC accuracy: 99.07, Decomposed-Full accuracy: 87.78, Decomposed-Restored accuracy: 87.78
+Full accuracy: 98.99, LC accuracy: 98.93, Decomposed-Full accuracy: 87.04, Decomposed-Restored accuracy: 87.04
+Full accuracy: 99.14, LC accuracy: 99.16, Decomposed-Full accuracy: 86.42, Decomposed-Restored accuracy: 86.42
+Full accuracy: 99.12, LC accuracy: 99.09, Decomposed-Full accuracy: 87.51, Decomposed-Restored accuracy: 87.51
+Full accuracy: 99.06, LC accuracy: 99.09, Decomposed-Full accuracy: 87.87, Decomposed-Restored accuracy: 87.87
+Full accuracy: 99.11, LC accuracy: 99.09, Decomposed-Full accuracy: 87.18, Decomposed-Restored accuracy: 87.18
+Full accuracy: 99.16, LC accuracy: 99.08, Decomposed-Full accuracy: 87.37, Decomposed-Restored accuracy: 87.37
+Full accuracy: 99.17, LC accuracy: 99.19, Decomposed-Full accuracy: 87.17, Decomposed-Restored accuracy: 87.17
+Full accuracy: 99.18, LC accuracy: 99.14, Decomposed-Full accuracy: 87.01, Decomposed-Restored accuracy: 87.01
+Full accuracy: 99.16, LC accuracy: 99.21, Decomposed-Full accuracy: 87.45, Decomposed-Restored accuracy: 87.45
+Full accuracy: 99.07, LC accuracy: 99.16, Decomposed-Full accuracy: 87.69, Decomposed-Restored accuracy: 87.69
+Full accuracy: 99.16, LC accuracy: 99.11, Decomposed-Full accuracy: 87.58, Decomposed-Restored accuracy: 87.58
+Full accuracy: 99.12, LC accuracy: 99.14, Decomposed-Full accuracy: 87.82, Decomposed-Restored accuracy: 87.82
+Full accuracy: 99.16, LC accuracy: 99.26, Decomposed-Full accuracy: 87.41, Decomposed-Restored accuracy: 87.41
+Full accuracy: 99.19, LC accuracy: 99.1, Decomposed-Full accuracy: 87.25, Decomposed-Restored accuracy: 87.25
+Full accuracy: 99.21, LC accuracy: 99.18, Decomposed-Full accuracy: 87.26, Decomposed-Restored accuracy: 87.26
+Full accuracy: 99.07, LC accuracy: 99.22, Decomposed-Full accuracy: 87.37, Decomposed-Restored accuracy: 87.37
+Full accuracy: 99.15, LC accuracy: 99.15, Decomposed-Full accuracy: 87.32, Decomposed-Restored accuracy: 87.32
+Full accuracy: 99.19, LC accuracy: 99.09, Decomposed-Full accuracy: 87.29, Decomposed-Restored accuracy: 87.29
+Full accuracy: 99.17, LC accuracy: 99.12, Decomposed-Full accuracy: 87.63, Decomposed-Restored accuracy: 87.63
+Full accuracy: 99.07, LC accuracy: 99.21, Decomposed-Full accuracy: 87.75, Decomposed-Restored accuracy: 87.75
+Full accuracy: 99.14, LC accuracy: 99.07, Decomposed-Full accuracy: 87.22, Decomposed-Restored accuracy: 87.22
+Full accuracy: 99.08, LC accuracy: 99.12, Decomposed-Full accuracy: 87.6, Decomposed-Restored accuracy: 87.6
+Full accuracy: 99.18, LC accuracy: 99.24, Decomposed-Full accuracy: 87.61, Decomposed-Restored accuracy: 87.61
+Full accuracy: 99.14, LC accuracy: 99.13, Decomposed-Full accuracy: 88.17, Decomposed-Restored accuracy: 88.17
+Full accuracy: 99.23, LC accuracy: 99.17, Decomposed-Full accuracy: 87.39, Decomposed-Restored accuracy: 87.39
+Full accuracy: 99.16, LC accuracy: 99.08, Decomposed-Full accuracy: 87.61, Decomposed-Restored accuracy: 87.61
+Full accuracy: 99.15, LC accuracy: 99.23, Decomposed-Full accuracy: 87.48, Decomposed-Restored accuracy: 87.48
+Full accuracy: 99.13, LC accuracy: 99.13, Decomposed-Full accuracy: 87.82, Decomposed-Restored accuracy: 87.82
+Full accuracy: 99.11, LC accuracy: 99.13, Decomposed-Full accuracy: 87.49, Decomposed-Restored accuracy: 87.49
+Full accuracy: 99.14, LC accuracy: 99.12, Decomposed-Full accuracy: 87.95, Decomposed-Restored accuracy: 87.95
+Full accuracy: 99.23, LC accuracy: 99.15, Decomposed-Full accuracy: 87.16, Decomposed-Restored accuracy: 87.16
+Full accuracy: 99.19, LC accuracy: 99.05, Decomposed-Full accuracy: 88.05, Decomposed-Restored accuracy: 88.05
