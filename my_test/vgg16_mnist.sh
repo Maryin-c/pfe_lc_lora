@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=vgg16
-#SBATCH --output=./my_test/res/vgg16_mnist_res.txt
-#SBATCH --error=./my_test/res/vgg16_mnist_error.txt
+#SBATCH --output=./my_test/res/vgg16_mnist_res_append.txt
+#SBATCH --error=./my_test/res/vgg16_mnist_error_append.txt
 #SBATCH --time=48:00:00
 #SBATCH --gpus=1
 #SBATCH --mem=32G
