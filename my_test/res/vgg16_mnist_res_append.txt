@@ -1,0 +1,4 @@
+LC-Checkpoint + GZIP
+Compression Ratio: 0.469%, Space Savings: -21228.756%
+LoRA + LC-Checkpoint + GZIP
+Compression Ratio: 4.053%, Space Savings: -2367.302%
