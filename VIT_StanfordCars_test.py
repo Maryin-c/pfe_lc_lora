@@ -57,8 +57,8 @@ def data_loader():
     # (mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 
     # 加载数据集
-    train_data = StanfordCars(root="./data", split="train", download=True, transform=train_transform)
-    test_data = StanfordCars(root="./data", split="test", download=True, transform=test_transform)
+    train_data = StanfordCars(root="./data", split="train", download=False, transform=train_transform)
+    test_data = StanfordCars(root="./data", split="test", download=False, transform=test_transform)
 
     tasks = [list(range(i, min(i + 50, num_classes))) for i in range(0, num_classes, 50)]
 
@@ -130,9 +130,9 @@ def train_model(model, train_loader, test_loader, num_epochs, id):
         for i in range(id + 1):
             correct = 0
             samples = 0
-            for inputs, labels in test_loaders[i]:
+            for images, labels in test_loaders[i]:
                 images, labels = images.to(device), labels.to(device)
-                outputs = model(inputs)
+                outputs = model(images)
                 _, predicted = outputs.max(1)
                 correct += (predicted == labels).sum().item()
                 samples += labels.size(0)

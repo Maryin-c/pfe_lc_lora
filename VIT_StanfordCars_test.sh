@@ -5,7 +5,7 @@
 #SBATCH --error=./res/vit_stanfordcars_test_error.txt
 #SBATCH --time=120:00:00
 #SBATCH --gres=gpu:a100-40:1
-#SBATCH --mem=256G
+#SBATCH --mem=64G
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=e1350606@u.nus.edu
 
