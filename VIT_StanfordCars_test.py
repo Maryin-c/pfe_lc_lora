@@ -132,7 +132,7 @@ def train_model(model, train_loader, test_loader, num_epochs, id):
             samples = 0
             for images, labels in test_loaders[i]:
                 images, labels = images.to(device), labels.to(device)
-                outputs = model(images)
+                outputs = model(images).logits
                 _, predicted = outputs.max(1)
                 correct += (predicted == labels).sum().item()
                 samples += labels.size(0)
