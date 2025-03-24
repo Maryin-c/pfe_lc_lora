@@ -5,7 +5,7 @@ from torchvision.datasets import StanfordCars
 from torch.utils.data import DataLoader, Subset
 import numpy as np
 
-from transformers import ViTForImageClassification, ViTFeatureExtractor
+from transformers import ViTForImageClassification, ViTFeatureExtractor, ViTImageProcessor
 from torch import nn, optim
 from sklearn.metrics import accuracy_score
 from peft import LoraConfig, get_peft_model, TaskType
@@ -39,6 +39,8 @@ run = wandb.init(
         "num_classes": num_classes,
     },
 )
+
+processor = ViTImageProcessor.from_pretrained(model_path)
 
 # 任务数据集划分
 def get_task_data(dataset, task_classes):
@@ -111,7 +113,8 @@ def evaluate(model, test_loader):
     total = 0
     for images, labels in test_loader:
         images, labels = images.to(device), labels.to(device)
-        outputs = model(images).logits
+        inputs = processor(images=images, return_tensors="pt")
+        outputs = model(**inputs).logits
         _, predicted = outputs.max(1)
         correct += (predicted == labels).sum().item()
         total += labels.size(0)
@@ -135,7 +138,8 @@ def train_model(model, train_loader, test_loader, num_epochs, id):
             images, labels = images.to(device), labels.to(device)
 
             optimizer.zero_grad()
-            outputs = model(images).logits
+            inputs = processor(images=images, return_tensors="pt")
+            outputs = model(**inputs).logits
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -160,7 +164,8 @@ def train_model(model, train_loader, test_loader, num_epochs, id):
             samples = 0
             for images, labels in test_loaders[i]:
                 images, labels = images.to(device), labels.to(device)
-                outputs = model(images).logits
+                inputs = processor(images=images, return_tensors="pt")
+                outputs = model(**inputs).logits
                 _, predicted = outputs.max(1)
                 correct += (predicted == labels).sum().item()
                 samples += labels.size(0)
