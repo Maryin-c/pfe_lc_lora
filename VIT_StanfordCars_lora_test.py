@@ -8,7 +8,7 @@ import numpy as np
 from transformers import ViTForImageClassification, ViTFeatureExtractor
 from torch import nn, optim
 from sklearn.metrics import accuracy_score
-from peft import LoraConfig, get_peft_model
+from peft import LoraConfig, get_peft_model, TaskType
 
 import wandb
 
@@ -18,11 +18,13 @@ num_epochs = 10
 learning_rate = 5e-5
 model_path = "google/vit-base-patch16-224-in21k"
 
+task_type = TaskType.IMAGE_CLASSIFICATION
+inference_mode = False
 rank = 8
 lora_alpha = 16
 bias = "none"
 lora_dropout = 0.1
-target_modules = ["query", "value"]
+target_modules = ["query", "key", "value", "intermediate.dense", "output.dense"]
 
 wandb.login(key="d8a57853232ad9c5337ec726db40457ebbf81f1a")
 run = wandb.init(
@@ -84,12 +86,12 @@ def data_loader():
 
 train_loaders, test_loaders = data_loader()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = ViTForImageClassification.from_pretrained(model_path, num_labels=num_classes).to(device)
-for param in model.parameters():
-    param.requires_grad = False
+model = ViTForImageClassification.from_pretrained(model_path, num_labels=num_classes)
 
 # 配置 LoRA 层
 lora_config = LoraConfig(
+    task_type=task_type,
+    inference_mode=inference_mode,
     r=rank,  # 低秩矩阵的秩
     lora_alpha=lora_alpha,  # LoRA 影响因子
     target_modules=target_modules,  # 仅作用于 Self-Attention 层
@@ -101,9 +103,8 @@ lora_config = LoraConfig(
 model = get_peft_model(model, lora_config)
 
 # 检查 LoRA 训练参数
-print(model)
 model.print_trainable_parameters()
-
+model = model.to(device)
 
 def evaluate(model, test_loader):
     correct = 0
