@@ -3,7 +3,6 @@
 #SBATCH --job-name=vit_test
 #SBATCH --output=./res/vit_stanfordcars_lora_test_res.txt
 #SBATCH --error=./res/vit_stanfordcars_lora_test_error.txt
-#SBATCH --time=120:00:00
 #SBATCH --gres=gpu:a100-40:1
 #SBATCH --mem=64G
 #SBATCH --mail-type=BEGIN,END,FAIL

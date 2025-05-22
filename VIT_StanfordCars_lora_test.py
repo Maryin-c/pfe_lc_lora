@@ -18,7 +18,7 @@ num_epochs = 10
 learning_rate = 5e-5
 model_path = "google/vit-base-patch16-224-in21k"
 
-task_type = TaskType.IMAGE_CLASSIFICATION
+task_type = TaskType.FEATURE_EXTRACTION
 inference_mode = False
 rank = 8
 lora_alpha = 16
